@@ -16,8 +16,6 @@
     "build": "ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
     "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
-    "lint:hbs": "ember-template-lint .",
-    "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
@@ -26,8 +24,13 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
+    "broccoli-file-creator": "^2.1.1",
+    "broccoli-funnel": "^3.0.8",
+    "broccoli-merge-trees": "^4.2.0",
+    "broccoli-persistent-filter": "^3.1.2",
     "ember-cli-babel": "^7.26.6",
-    "ember-cli-htmlbars": "^5.7.1"
+    "ember-cli-htmlbars": "^5.7.1",
+    "ionicons": "^6.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
@@ -51,7 +54,6 @@
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.28.0",
     "ember-source-channel-url": "^3.0.0",
-    "ember-template-lint": "^3.6.0",
     "ember-try": "^1.4.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",

@@ -1,38 +1,36 @@
-ember-ionicons
-==============================================================================
+# ember-ionicons
 
-[Short description of the addon.]
+All of [Ionicons](https://ionic.io/ionicons), as Ember components
 
+## Compatibility
 
-Compatibility
-------------------------------------------------------------------------------
+- Ember.js v3.20 or above
+- Ember CLI v3.20 or above
+- Node.js v12 or above
 
-* Ember.js v3.20 or above
-* Ember CLI v3.20 or above
-* Node.js v12 or above
+## Installation
 
-
-Installation
-------------------------------------------------------------------------------
-
-```
+```sh
 ember install ember-ionicons
 ```
 
+## Usage
 
-Usage
-------------------------------------------------------------------------------
+Each Ionicon is available as a component:
 
-[Longer description of how to use the addon in apps.]
+```hbs
+<Ionicons::Add />
+```
 
+Caveats right now:
 
-Contributing
-------------------------------------------------------------------------------
+1. _All_ of the icons are defined; there are a lot of them, and they are not tree-shaken
+2. They do not accept attribute bindings yet, though they will soon
+
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
