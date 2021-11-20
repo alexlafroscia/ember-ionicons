@@ -22,8 +22,7 @@ class EmberIoniconSvgToHbsConverter extends Filter {
   targetExtension = 'hbs';
 
   processString(content /* relativePath */) {
-    // TODO: inject `...attributes` into icon
-    return content;
+    return content.replace('><title>', '...attributes><title>');
   }
 }
 

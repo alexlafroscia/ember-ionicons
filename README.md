@@ -25,7 +25,6 @@ Each Ionicon is available as a component:
 Caveats right now:
 
 1. _All_ of the icons are defined; there are a lot of them, and they are not tree-shaken
-2. They do not accept attribute bindings yet, though they will soon
 
 ## Contributing
 
